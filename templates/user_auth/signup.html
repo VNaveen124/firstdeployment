@@ -1,0 +1,12 @@
+{% extends "user_auth/layout.html" %}
+
+{% block body %}
+
+    <form action="{% url 'user_auth:signup' %}" method="post">
+        {% csrf_token %}
+        <input type="text", name="username", placeholder="Username">
+        <input type="password", name="password", placeholder="Password">
+        <input type="email", name="email", placeholder="email id">
+        <input type="submit", value="signup">
+    </form>
+{% endblock %}

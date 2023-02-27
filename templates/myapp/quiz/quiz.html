@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+        <style>
+           body {background-color:pink;}
+           .column {
+                float: left;
+                width: 20%;
+                padding: 35px;
+                padding-top: 200px;
+                text-align: justify;
+            }
+            /* Clear floats after image containers */
+            .row ::after {
+                content: "";
+                clear: both;
+                display:table;
+            }
+            figcaption{
+                margin-left: 100px;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body text-align="center">
+        <div class="row">
+        <div class="column"><a href="python.html" title="Know your skill"><figure><img src="logo.jpeg" style="width: 250px;height:250px; vertical-align:middle;" ></a><figcaption>PYTHON</figcaption></figure></div>
+        <div class="column"><a href="java.html" title="Know your skill" ><figure><img src="java.jpeg" style="width: 250px;height:250px; vertical-align:middle;" ></a><figcaption>JAVA</figcaption></figure></div>
+        <div class="column"><a href="c.html" title="Know your skill"><figure><img src="C_logo.jpg" style="width: 250px;height:250px; vertical-align:middle;" ></a><figcaption>C</figcaption></figure></div>
+        <div class="column"><a href="c++.html" title="Know your skill"><figure><img src="C++_logo.jpg" style="width: 250px;height:250px; vertical-align:middle;"></a><figcaption>C++</figcaption></figure></div>
+        </div>
+    </body>
+</html>
